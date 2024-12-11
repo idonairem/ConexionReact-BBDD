@@ -20,7 +20,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin); /* Reducido el tamaño del texto */
   color: white;
 }
 
@@ -35,4 +35,58 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Estilo para el formulario */
+input[type="text"], input[type="email"] {
+  border: 2px solid #61dafb;
+  border-radius: 5px;
+  padding: 8px; /* Reducido el padding */
+  margin: 8px; /* Reducido el margen */
+  font-size: 14px; /* Reducido el tamaño de la fuente */
+  width: 250px; /* Reducido el tamaño del input */
+}
+
+button {
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 8px 16px; /* Reducido el padding */
+  font-size: 14px; /* Reducido el tamaño de la fuente */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #21a1f1;
+}
+
+/* Estilo para la tabla */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 90%; /* Reducido el ancho de la tabla */
+  color: #333;
+  background-color: #f9f9f9;
+  font-size: 14px; /* Reducido el tamaño de la fuente de la tabla */
+}
+
+table th, table td {
+  border: 1px solid #ddd;
+  padding: 9px; /* Reducido el padding */
+  text-align: left;
+}
+
+table th {
+  background-color: #61dafb;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
 }
