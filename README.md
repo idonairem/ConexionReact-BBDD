@@ -1,8 +1,8 @@
-# User Management Project
+# Proyecto de Gestión de Usuarios
 
-This project is a web application to add and display users. It consists of a Node.js backend with MySQL and a React.js frontend. The backend provides a REST API to interact with the users, and the frontend allows adding new users and viewing a list of existing ones.
+Este proyecto es una aplicación web para agregar y mostrar usuarios. Está compuesto por un backend en **Node.js** con **MySQL** y un frontend en **React.js**. El backend proporciona una API REST para interactuar con los usuarios y el frontend permite agregar nuevos usuarios y ver una lista de los existentes.
 
-## Features
+## Características
 
 - **Agregar usuarios**: Puedes agregar nuevos usuarios mediante un formulario en el frontend.
 - **Ver usuarios**: Los usuarios existentes se muestran en una tabla en la misma página.
@@ -25,3 +25,4 @@ This project is a web application to add and display users. It consists of a Nod
 
 - Tener **Node.js** y **npm** instalados en tu máquina.
 - Tener una base de datos **MySQL** en funcionamiento.
+traducemelo al ingles
