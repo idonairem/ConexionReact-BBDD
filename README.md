@@ -25,3 +25,4 @@ Este proyecto es una aplicación web para agregar y mostrar usuarios. Está comp
 
 - Tener **Node.js** y **npm** instalados en tu máquina.
 - Tener una base de datos **MySQL** en funcionamiento.
+traducemelo al ingles
