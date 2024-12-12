@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: linear-gradient(135deg, #f0e5de, #d1c4b1); 
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(8px + 2vmin); /* Reducido el tamaño del texto */
-  color: white;
+  font-size: calc(8px + 2vmin);
+  color: #333;  
 }
 
 .App-link {
@@ -37,14 +37,19 @@
   }
 }
 
-/* Estilo para el formulario */
 input[type="text"], input[type="email"] {
   border: 2px solid #61dafb;
   border-radius: 5px;
-  padding: 8px; /* Reducido el padding */
-  margin: 8px; /* Reducido el margen */
-  font-size: 14px; /* Reducido el tamaño de la fuente */
-  width: 250px; /* Reducido el tamaño del input */
+  padding: 8px;
+  margin: 8px;
+  font-size: 14px;
+  width: 250px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+  border-color: #21a1f1;
+  outline: none;
 }
 
 button {
@@ -52,35 +57,43 @@ button {
   border: none;
   border-radius: 5px;
   color: white;
-  padding: 8px 16px; /* Reducido el padding */
-  font-size: 14px; /* Reducido el tamaño de la fuente */
+  padding: 8px 16px;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 button:hover {
   background-color: #21a1f1;
+  transform: scale(1.05);
 }
 
-/* Estilo para la tabla */
+button:active {
+  transform: scale(0.98);
+}
+
 table {
   margin-top: 20px;
   border-collapse: collapse;
-  width: 90%; /* Reducido el ancho de la tabla */
+  width: 90%;
   color: #333;
   background-color: #f9f9f9;
-  font-size: 14px; /* Reducido el tamaño de la fuente de la tabla */
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 table th, table td {
   border: 1px solid #ddd;
-  padding: 9px; /* Reducido el padding */
+  padding: 9px;
   text-align: left;
 }
 
 table th {
   background-color: #61dafb;
   color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 table tr:nth-child(even) {
@@ -89,4 +102,39 @@ table tr:nth-child(even) {
 
 table tr:hover {
   background-color: #ddd;
+}
+
+/* Estilos para el modal (ventana emergente) */
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  width: 400px;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Estilos del formulario dentro del modal */
+.modal input {
+  width: 80%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.modal button {
+  margin-top: 10px;
+  width: 48%;
+  margin-right: 4%;
+}
+
+.modal button:last-child {
+  margin-right: 0;
 }
